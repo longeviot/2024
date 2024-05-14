@@ -446,10 +446,15 @@ hr:after {
     color: white;
 }
 
+.committee-name {
+    line-height: 1em;
+}
+
 .affiliation {
     line-height: 1em;
     font-weight: 100;
     font-size: 0.8em;
+    text-transform: uppercase;
 }
 
 .nav-container {
@@ -480,17 +485,19 @@ hr:after {
 }
 
 .dates {
-    width: 50%;
+    width: auto;
     margin: 0px auto;
 }
 
+
 .dates > tbody > tr > td:first-child {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 1em;
 }
 
-.dates > tbody > tr > td {
-    width: 250px;
+.dates > tbody > tr > td:last-child {
+    text-align: left;
+    padding-left: 1em;
 }
 
 .toi-list {
