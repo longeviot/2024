@@ -518,3 +518,11 @@ hr:after {
 .maintenance::after {
     content: ">>>";
 }
+
+.download-icon-text {
+    font-size: 0.8em;
+}
+
+.download-icon-text > a {
+    font-size: 1.25em;
+}
