@@ -215,8 +215,7 @@ button:focus,
 .team .thumbnail h3 {
     font-size: 16px;
     font-weight: bold;
-
-    margin: 0 40px;
+    margin: 0 5px;
     text-transform: uppercase;
     padding: 10px 0;
 }
@@ -421,16 +420,26 @@ hr:after {
     padding-bottom: 50px;
 }
 
-.workshop-name {
+.workshop-header {
     font-weight: 800;
     font-size: 4em;
     color: white;
 }
 
-.conference-name {
+.workshop-name {
     font-weight: 400;
     font-size: 2em;
     color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .workshop-header {
+        font-size: 3em;
+    }
+
+    .workshop-name {
+        font-size: 1.5em;
+    }
 }
 
 .event-date {
@@ -480,6 +489,36 @@ hr:after {
     color: var(--accent-color);
 }
 
+.navbar-toggler {
+    margin-left: 0.5em;
+    border-color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-collapse > * > li {
+        width: 100%;
+        margin: auto 0 !important;
+        padding: 0.25em 0;
+        font-size: 1.25em;
+    }
+}
+
+
 .text-block > p {
     text-align: justify;
 }
@@ -492,12 +531,64 @@ hr:after {
 
 .dates > tbody > tr > td:first-child {
     text-align: right;
+    vertical-align: top;
     padding-right: 1em;
 }
 
 .dates > tbody > tr > td:last-child {
     text-align: left;
     padding-left: 1em;
+}
+
+.dates-md {
+    display: none;
+}
+
+.dates-md > tbody > tr > td:first-child {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1em;
+}
+
+.dates-sm {
+    display: none;
+    text-align: center;
+}
+
+.dates-sm > p {
+    margin: 0;
+}
+
+.dates-sm > .download-icon-text {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .dates {
+        display: none;
+    }
+
+    .dates-md {
+        display: table;
+    }
+
+    .dates-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dates {
+        display: none;
+    }
+
+    .dates-md {
+        display: none;
+    }
+
+    .dates-sm {
+        display: inline;
+    }
 }
 
 .toi-list {
