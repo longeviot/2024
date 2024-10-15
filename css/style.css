@@ -131,16 +131,16 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color: var(--accent-dark-color);
-    border-color: var(--accent-dark-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
     background: transparent;
-    color: var(--accent-dark-color);
-    border-color: var(--accent-dark-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /*btn-default*/
@@ -391,6 +391,11 @@ hr:after {
 .pubs_content {
     /* font-family: 'CMUSansSerif'; */
     font-size: 16pt;
+}
+
+.pub-abstract {
+    text-align: justify;
+    font-weight: normal;
 }
 
 .image-holder {
